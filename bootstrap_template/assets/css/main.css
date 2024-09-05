@@ -866,6 +866,18 @@ section,
   font-size: 14px;
 }
 
+.map-item {
+  width:100%;
+}
+.map {
+  position: relative;
+  width:50%;
+}
+.map-img {
+  height: auto;
+  width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
@@ -1012,7 +1024,7 @@ section,
   margin: 0 10px;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1046,8 +1058,8 @@ section,
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 3;
-  z-index: 10;
+  bottom: 0;
+  z-index: 3;
   transition: all ease-in-out 0.3s;
   padding: 15px;
 }
