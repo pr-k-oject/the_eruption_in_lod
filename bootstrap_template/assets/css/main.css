@@ -1039,9 +1039,6 @@ section,
 .portfolio .portfolio-item {
   position: relative;
 }
-.portfolio-item{
-  margin-bottom: 100px;
-}
 
 .portfolio .portfolio-item .portfolio-info {
   background-color: color-mix(in srgb, var(--surface-color), transparent 10%);
