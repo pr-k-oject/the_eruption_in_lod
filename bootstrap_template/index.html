@@ -68,7 +68,7 @@
           </li>
           <li class="dropdown"><a href="knowledge-representation"><span>Knowledge Representation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Items description</a></li>
+              <li><a href="items-description">Items description</a></li>
               <li><a href="#">RDF production</a></li>
               <li><a href="#">RDF visualization</a></li>
             </ul>
@@ -1113,7 +1113,346 @@
         <h2 id="knowledge-representation">Knowledge Representation</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
+      <section id="portfolio" class="portfolio section">
 
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up" id="metadata-alignment">
+          <h3 style="text-align: left;" id="#items-description">Items description</h3>
+          <p style="text-align: left;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+  
+         
+        <div class="container">
+  
+          <div class="isotope-layout" data-layout="masonry" data-sort="original-order">
+  
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter=".who" class="filter-active">Lamp</li>
+              <li data-filter=".where">Domus</li>
+              <li data-filter=".when">Photo</li>
+              <li data-filter=".when">Map</li>
+              <li data-filter=".when">Focaccia</li>
+              <li data-filter=".when">Statue</li>
+              <li data-filter=".when">Painting</li>
+              <li data-filter=".when">Poster</li>
+              <li data-filter=".when">Documentary</li>
+              <li data-filter=".when">Novel</li>
+            </ul><!-- End Portfolio Filters -->
+  
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+  
+              <div class="col-lg-4 col-md-6 portfolio-item map-item isotope-item who">
+                <table class="table">
+                  <tr><th>Property</th>
+                  <th>Dublin Core</th>
+                  <th>ICCD-F</th>
+                  <th>ICCD-RA</th>
+                  <th>EAD</th>
+                  <th>CCO</th>
+                  <th>CIDOC-CRM</th></tr>
+                  <tr><td>Creator</td>
+                  <td>dcterms:creator</td>
+                  <td>AUT, AUTN</td>
+                  <td>AUTS, AUTN</td>
+                  <td></td>
+                  <td>Creator Display</td>
+                  <td>E12 Production
+                    E7 Activity
+                    E65 Creation
+                    E21 Person
+                    E39 Actor
+                    E74 Group
+                    E67 Birth
+                    E69 Death</td>
+                  </tr>
+                  <tr><td>Contributor</td>
+                  <td>dcterms:contributor</td>
+                  <td>/</td>
+                  <td>/</td>
+                  <td>
+                    </td>
+                  <td>Person_Corp_Rels_Subject.
+                    person.corp.number
+                  </td>
+                  <td>/</td></tr>
+                  <tr><td>Production company
+                    Creator description
+                  </td>
+                  <td>dcterms:description
+                    dcterms:contributor
+                  </td>
+                  <td>/</td>
+                  <td>/</td>
+                  <td>/</td>
+                  <td>/</td>
+                  <td>/</td></tr>
+                  <tr><td>Publisher</td>
+                  <td>dcterms:publisher</td>
+                  <td>/</td>
+                  <td>/</td>
+                  <td></td>
+                  <td>/</td>
+                  <td>/</td></tr>
+                </table>
+                </div>
+              
+                <div class="col-lg-4 col-md-6 portfolio-item map-item isotope-item what">
+                  <table class="table">
+                    <tr><th>Property</th>
+                      <th>Dublin Core</th>
+                      <th>ICCD-F</th>
+                      <th>ICCD-RA</th>
+                      <th>EAD</th>
+                      <th>CCO</th>
+                      <th>CIDOC-CRM</th></tr>
+                    <tr><td>Title</td>
+                    <td>dcterms:title</td>
+                    <td>SGL-Titolo SGLT-Titolo proprio</td>
+                    <td>SGTT-Titolo</td>
+                    <td></td>
+                    <td>Title</td>
+                    <td>E35_Title</td></tr>
+                    <tr><td>Type</td>
+                    <td>dcterms:type</td>
+                    <td>FTAP-Tipo</td>
+                    <td>OGTT-Tipologia</td>
+                    <td></td>
+                    <td>Work
+                      Type
+                      Description</td>
+                    <td>E55_Type
+                      P2_has_type (is_type_of)
+                    </td></tr>
+                    <tr><td>Medium (material or physical carrier)</td>
+                    <td>dcterms:medium</td>
+                    <td>MTC-Materia e tecnica</td>
+                    <td>MTC-Materia e tecnica</td>
+                    <td>
+                      </td>
+                    <td>Materials and tecniques display
+                      Materials
+                      Material Type Technique
+                    </td>
+                    <td>E57_Material
+                      P45_consists of
+                      P32_used general_technique
+                      P33_used_specific_technique
+                      </td></tr>
+                    <tr><td>Collection (a related resource)</td>
+                    <td>dcterms:relation</td>
+                    <td>LDC-Collocazione specifica
+                      LDCM-Denominazione raccolta
+                    </td>
+                    <td>CLS-Categoria-classe e produzione
+                      LDCM-Denominazione raccolta
+                    </td>
+                    <td>/</td>
+                    <td>Class</td>
+                    <td>E78_Curated_Holding</td></tr>
+                    <tr><td>Event</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>RSER-Tipo relazione (in RSE-Relazioni dirette)</td>
+                    <td></td>
+                    <td>/</td>
+                    <td>E5_Event</td></tr>
+                    <tr><td>Function</td>
+                    <td>dcterms:description</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td></td>
+                    <td>Work
+                      Type
+                    </td>
+                    <td>P19_was_intended_use_of (was made for)
+                      P101_had_as_general_use (was use of)
+                      </td></tr>
+                    <tr><td>Size</td>
+                    <td>dcterms:extent</td>
+                    <td>MIS-Misure 
+                      MISU-Unità
+                      MISA-Altezza 
+                      MISL-Larghezza
+                      MISS-Spessore 
+                      MISD-Diametro
+                    </td>
+                    <td>MIS-Misure
+                      MISU-Unità
+                      MISL-Larghezza
+                      MISD-Diametro
+                      MISN-Lunghezza 
+                      MISS-Spessore 
+                      FTAF-Formato
+                    </td>
+                    <td></td>
+                    <td>
+                      Measurements 
+                      Unit of Measurement
+                      Extent
+                      Height and Width
+                      Shape
+                      Weight
+                      Volume and Area
+                      Size
+                      </td>
+                    <td>E54_Dimension
+                      E16_Measurement
+                      
+                      P43_has_dimension
+                      P40_observed_dimension (was observed in)
+                      P90_has_value
+                      P91_has unit</td></tr>
+                    <tr><td>Format</td>
+                    <td>dcterms:format</td>
+                    <td>FTA-documentazione fotografica</td>
+                    <td>FTAF-Formato 
+                      VDCP-Tipo
+                    </td>
+                    <td></td>
+                    <td>Format</td>
+                    <td>/</td></tr>
+                    <tr><td>File format</td>
+                    <td>dcterms:format
+                      dcterms:isFormatOf 
+                      dcterms:hasFormat
+                    </td>
+                    <td>FTA-Documentazione fotografica</td>
+                    <td>FTAF-Formato 
+                      VDCP-Tipo
+                    </td>
+                    <td>
+                     </td>
+                    <td>Format</td>
+                    <td>/</td></tr>
+                    <tr><td>Language</td>
+                    <td>dcterms:language</td>
+                    <td>/</td>
+                    <td>ISRL-Lingua</td>
+                    <td></td>
+                    <td>Language</td>
+                    <td>P72_has_language (is_language_of)</td></tr>
+                    <tr><td>Description</td>
+                    <td>dcterms:description</td>
+                    <td>OGTD-Definizione dell'oggetto</td>
+                    <td>OGTD-Definizione</td>
+                    <td>
+                      </td>
+                    <td>Description</td>
+                    <td>/</td></tr>
+                    <tr><td>Subject</td>
+                    <td>dcterms:subject</td>
+                    <td>SGT-Soggetto</td>
+                    <td>SGT-Soggetto</td>
+                    <td></td>
+                    <td>Subject</td>
+                    <td>P129_is_about (is subject of)
+                      P104_is_subject_to (applies to)
+                      </td></tr>
+                  </table>
+                  </div>
+  
+                  <div class="col-lg-4 col-md-6 portfolio-item map-item isotope-item where">
+                    <table class="table">
+                      <tr><th>Property</th>
+                        <th>Dublin Core</th>
+                        <th>ICCD-F</th>
+                        <th>ICCD-RA</th>
+                        <th>EAD</th>
+                        <th>CCO</th>
+                        <th>CIDOC-CRM</th></tr>
+                      <tr><td>Place of creation of the resource</td>
+                      <td>/</td>
+                      <td>LRC - Localizzazione (in LR-Luogo e data della ripresa)</td>
+                      <td>GPL - Tipo di localizzazione (in GPL-Georeferenziazione tramite punto)
+                        CTL-Tipo di localizzazione (in CS-Localizzazione catastale)
+                        </td>
+                      <td>
+                        </td>
+                      <td>Creation Location</td>
+                      <td>/</td></tr>
+                      <tr><td>Current geographic location of the resource</td>
+                      <td>/</td>
+                      <td>PVC-Localizzazione (in LC-Localizzazione geografico-amministrativa)</td>
+                      <td>PVC-Localizzazione geografico-amministrativa attuale (in LC-Localizzazione geografico-amministrativa)</td>
+                      <td>/</td>
+                      <td>Current Location</td>
+                      <td>P53_Has former or current location (is former or current location of)
+                        P54_Has current permanent location (is current permanent location of)
+                        P55_Has current location (currently holds)
+                        </td></tr>
+                      <tr><td>Institution that currently holds the resource</td>
+                      <td>dcterms:coverage</td>
+                      <td>LDC-Collocazione specifica (in LC-Localizzazione geografico-amministrativa)</td>
+                      <td>LDC-Collocazione specifica (in LC-Localizzazione geografico-amministrativa)</td>
+                      <td></td>
+                      <td>Current Location</td>
+                      <td>P53_Has former or current location (is former or current location of)
+                        P54_Has current permanent location (is current permanent location of)
+                        P55_Has current location (currently holds)</td></tr>
+                      <tr><td>Physical container</td>
+                      <td>dcterms:isPartOf</td>
+                      <td>UBF-Ubicazione bene (in UB-Dati patrimoniali/inventari/stime/collezioni)</td>
+                      <td>/</td>
+                      <td></td>
+                      <td>/</td>
+                      <td>E78_Curated_Holding</td></tr>
+                      <tr><td>Place of finding</td>
+                      <td>/</td>
+                      <td>/</td>
+                      <td>SCAN-Denominazione dello scavo (in DSC-Dati di scavo)
+                        CTL-Tipo di localizzazione (in CS-Localizzazione catastale)
+                        GPL - Tipo di localizzazione (in GPL-Georeferenziazione tramite punto)
+                        </td>
+                      <td>/</td>
+                      <td>Discovery Location</td>
+                      <td>/</td></tr>
+                    </table>
+                    </div>
+  
+                    <div class="col-lg-4 col-md-6 portfolio-item map-item isotope-item when">
+                      <table class="table">
+                        <tr><th>Property</th>
+                          <th>Dublin Core</th>
+                          <th>ICCD-F</th>
+                          <th>ICCD-RA</th>
+                          <th>EAD</th>
+                          <th>CCO</th>
+                          <th>CIDOC-CRM</th></tr>
+                        <tr><td>Date of creation</td>
+                        <td>dcterms:created</td>
+                        <td>DTZ-Cronologia generica; DTS-Cronologia specifica (in DT-Cronologia); LRD-Data della ripresa (in LR-Data e luogo della ripresa)
+                        </td>
+                        <td>DTZ-Cronologia generica; DTS-Cronologia specifica </td>
+                        <td></td>
+                        <td>Display Date</td>
+                        <td>E52_Time-Span
+                          E61_Time Primitive</td></tr>
+                        <tr><td>Date of modification/restoration</td>
+                        <td>dcterms:modified</td>
+                        <td>RSTD-Riferimento cronologico (in RST-Interventi)</td>
+                        <td>RSTD-Data (in RST-Restauri)</td>
+                        <td>/</td>
+                        <td>Display Date (@qualifier)</td>
+                        <td>/</td></tr>
+                        <tr><td>Excavation date/Date of finding</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>DSCD-Data (in DSC-Dati di scavo)</td>
+                        <td>/</td>
+                        <td>/</td>
+                        <td>/</td></tr>
+                      </table>
+                      </div>
+              </div> <!-- End Portfolio item -->
+            </div><!-- End Portfolio Container -->
+  
+          </div>
+  
+        </div>
+  
+      </section><!-- /Portfolio Section -->
+
+      
       <div class="container">
 
         <div class="row gy-4">
