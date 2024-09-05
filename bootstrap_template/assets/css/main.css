@@ -1012,7 +1012,7 @@ section,
   margin: 0 10px;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -1039,6 +1039,9 @@ section,
 .portfolio .portfolio-item {
   position: relative;
 }
+.portfolio-item{
+  margin-bottom: 100px;
+}
 
 .portfolio .portfolio-item .portfolio-info {
   background-color: color-mix(in srgb, var(--surface-color), transparent 10%);
@@ -1046,8 +1049,8 @@ section,
   position: absolute;
   left: 30px;
   right: 30px;
-  bottom: 0;
-  z-index: 3;
+  bottom: 3;
+  z-index: 10;
   transition: all ease-in-out 0.3s;
   padding: 15px;
 }
