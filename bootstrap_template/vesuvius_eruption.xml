@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">The last days of Pompeii / by Edward George Bulwer-Lytton</title>
+                <author sameAs="https://viaf.org/viaf/99871326">Edward Bulwer Lytton, Baron</author>
+                <respStmt>
+                    <resp>compiled by</resp>
+                    <name>Eris, Project</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Electronic Edition, <date>2022-08-19</date></edition>
+            </editionStmt>
+            <extent>859.17 KB</extent>
+            <publicationStmt>
+                <publisher>University of Oxford</publisher>
+                <date>2022/08/19</date>
+                <idno type="OTA">ota:2004</idno>
+                <availability>
+                    <p>Publicly Available under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct xml:lang="en">
+                    <monogr>
+                        <title>The last days of Pompeii / by Edward George Bulwer-Lytton </title>
+                        <author>Edward Bulwer Lytton, Baron</author>
+                        <imprint>
+                            <publisher sameAs="https://www.wikidata.org/wiki/Q34433">University of Oxford</publisher>
+                            <date>1834</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>The purpose of the TEI encoding of some paragraphs of the novel "The last days of Pompeii / by Edward George Bulwer-Lyttons" is to develop a LOD project about the Vesuvius eruption for the "Information Science and Cultural Heritage" course </p>     
+            </projectDesc>
+            <editorialDecl>
+                <p>The original text has been transcribed faithfully without additions, modifications or normalizations, except for the indication of omitted paragraphs. No content editing or typographical corrections have been made.</p>
+            </editorialDecl>
+            <samplingDecl>
+                <p>The provided text is not complete and contains only parts of the chapter VII of the Book V, in particular the paragraphs 1, 2, 6, 7, 8, 10 and 15. There is no italicized text.</p>
+            </samplingDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="en">English</language>
+            </langUsage>
+            <textDesc n="novel">
+                <channel mode="w">print</channel>
+                <constitution  type ="single"/>
+                <derivation  type ="original"/> 
+                <domain  type ="art"/> 
+                <factuality type="fiction"/> 
+                <interaction type="none"/>
+                <preparedness type="revised"/>
+                <purpose type="entertain"/> 
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name>Pompeii, Italy</name>
+                    <time>AD 79</time>
+                </setting>     
+            </settingDesc>
+            <particDesc>
+                <listPerson>
+                    <person xml:id="Glaucus">
+                        <persName>
+                            <forename>Glaucus</forename>
+                            <addName type="nickname">the Athenian</addName>
+                        </persName>
+                    </person>
+                    <person xml:id="Ione">
+                        <persName>
+                            <forename>Ione</forename>
+                        </persName>
+                    </person>
+                    <person xml:id="Nydia">
+                        <persName>
+                            <forename>Nydia</forename>
+                            <addName type="nickname">the blind girl</addName>
+                        </persName>
+                    </person>
+                </listPerson>
+            </particDesc>
+        </profileDesc>
+    </teiHeader>
+    <text xml:lang="en">
+        <body>
+            <div type="chapter" n="7">
+                <head> VII. The last days of Pompeii / by Edward George Bulwer-Lytton </head>
+                <div type="paragraph" n="1">
+                    <p>THE cloud, which had scattered so deep a murkiness over the day,
+                        had now settled into a solid and impenetrable mass. It resembled
+                        less even the thickest gloom of a night in the open air than the close
+                        and <emph>blind darkness</emph> of some narrow room. But in proportion as the
+                        blackness gathered, did the lightnings around <placeName sameAs="https://www.geonames.org/3164481">Vesuvius</placeName>
+                        their vivid and scorching glare. Nor was their horrible beauty
+                        confined to the usual hues of fire; no rainbow ever rivalled their
+                        varying and prodigal dyes. Now brightly blue as the most azure depth
+                        of a southern sky- now of a livid and snakelike green, darting
+                        restlessly to and fro as the folds of an enormous serpent- now of a
+                        lurid and intolerable crimson, gushing forth through the <emph>columns of
+                        smoke</emph>, far and wide, and lighting up the whole city from arch to arch-
+                        then suddenly dying into a sickly paleness, like the ghost of their
+                        own life!</p>
+                </div>
+                <div type="paragraph" n="2">
+                    <p> In the pauses of the showers, you heard <emph>the rumbling of the
+                        earth beneath</emph>, and the groaning waves of the <emph>tortured sea</emph>; or, lower
+                        still, and audible but to the watch of intensest fear, the grinding
+                        zand hissing murmur of the <emph>escaping gases through the chasms of the
+                        distant mountain</emph>. Sometimes the cloud appeared to break from its solid
+                        mass, and, by the lightning, to assume quaint and vast mimicries of
+                        human or of monster shapes, striding across the gloom, hurtling one
+                        upon the other, and vanishing swiftly into the turbulent abyss of
+                        shade; so that, to the eyes and fancies of the affrighted wanderers,
+                        the unsubstantial vapours were as the bodily forms of gigantic foes-
+                        the agents of terror and of death.</p>
+                </div>
+                <div type="paragraph" n="6">
+                    <p>Through this awful scene did <persName ref="#Glaucus">the Athenian</persName> wade his way,
+                        accompanied by <persName ref="#Ione">Ione</persName> and the <persName ref="#Nydia">blind girl</persName>. Suddenly, a rush of
+                        hundreds, in their path to the sea, swept by them. <persName ref="#Nydia">Nydia</persName> was torn from
+                        the side of <persName ref="#Glaucus">Glaucus</persName>, who, with <persName ref="#Ione">Ione</persName>, was borne rapidly onward; and
+                        when the crowd (whose forms they saw not, so thick was the gloom) were
+                        gone, <persName ref="#Nydia">Nydia</persName> was still separated from their side. <persName ref="#Glaucus">Glaucus</persName> shouted her
+                        name. No answer came. They retraced their steps- in vain: they could
+                        not discover her- it was evident she had been swept along some
+                        opposite direction by the human current. Their friend, their
+                        preserver, was lost! And hitherto <persName ref="#Nydia">Nydia</persName> had been their guide. Her
+                        blindness rendered the scene familiar to her alone. Accustomed,
+                        through a perpetual night, to thread the windings of the city, <persName ref="#Nydia">she</persName> had
+                        led them unerringly towards the sea-shore, by which they had
+                        resolved to hazard an escape. Now, which way could they wend? all
+                        was rayless to them- a maze without a clue. Wearied, despondent,
+                        bewildered, they, however, passed along, the ashes falling upon
+                        their heads, the fragmentary stones dashing up in sparkles before
+                        their feet.</p>
+                </div>
+                <div type="paragraph" n="7">
+                    <p><said who="#Ione" toWhom="#Glaucus">'Alas! alas!'</said> murmured Ione, <said who="#Ione" toWhom="#Glaucus">'I can go no farther; my steps sink
+                        among the scorching cinders. Fly, <persName ref="#Glaucus">dearest!- beloved</persName>, fly! and leave me
+                        to my fate!'</said></p>
+                </div>
+                 <div type="paragraph" n="8">
+                    <p><said who="#Glaucus" toWhom="#Ione">'Hush, <persName ref="#Ione">my betrothed! my bride!</persName> Death with thee is sweeter than
+                        life without thee! Yet, whither- oh! whither, can we direct
+                        ourselves through the gloom? Already it seems that we have made but
+                        a circle, and are in the very spot which we quitted an hour ago.'</said></p>
+                </div>
+                <div type="paragraph" n="10">
+                    <p><said who="#Glaucus" toWhom="#Ione">'Blessed lightning! See, <persName ref="#Ione">Ione</persName>- see! the portico of the <placeName sameAs="https://www.wikidata.org/wiki/Q3983204">Temple of
+                        Fortune</placeName> is before us. Let us creep beneath it; it will protect us from
+                        the showers.'</said></p>
+                </div>
+                <div type="paragraph" n="15">
+                    <p>While they were thus terribly protected, a group of men and women,
+                        bearing torches, passed by the <placeName sameAs="https://www.wikidata.org/wiki/Q3983204">temple</placeName>. They were of the congregation
+                        of the <orgName type="religious">Nazarenes</orgName>; and a sublime and unearthly emotion had not, indeed,
+                        quelled their awe, but it had robbed awe of fear. They had long
+                        believed, according to the error of the early Christians, that 
+                        the Last Day was at hand; they imagined now that the Day had come.
+                   </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
+    
