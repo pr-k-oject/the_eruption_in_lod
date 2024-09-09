@@ -1,0 +1,60 @@
+@prefix arco: <http://purl.org/vocab/relationship> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://www.schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://w3id.org/quotation/quot1> a schema1:quotation ;
+    rdfs:label "'Alas! alas!'"^^xsd:string ;
+    schema1:spokenByCharacter <http://www.w3id.org/character/ione> .
+
+<http://w3id.org/quotation/quot2> a schema1:quotation ;
+    rdfs:label "'I can go no farther; my steps sink among the scorching cinders. Fly, dearest!- beloved, fly! and leave me to my fate!'"^^xsd:string ;
+    schema1:spokenByCharacter <http://www.w3id.org/character/ione> .
+
+<http://w3id.org/quotation/quot3> a schema1:quotation ;
+    rdfs:label "'Hush, my betrothed! my bride! Death with thee is sweeter than life without thee! Yet, whither- oh! whither, can we direct ourselves through the gloom? Already it seems that we have made but a circle, and are in the very spot which we quitted an hour ago.'"^^xsd:string ;
+    schema1:spokenByCharacter <http://www.w3id.org/character/glaucus> .
+
+<http://w3id.org/quotation/quot4> a schema1:quotation ;
+    rdfs:label "'Blessed lightning! See, Ione- see! the portico of the Temple of Fortune is before us. Let us creep beneath it; it will protect us from the showers.'"^^xsd:string ;
+    schema1:spokenByCharacter <http://www.w3id.org/character/glaucus> .
+
+<http://www.w3id.org/book/the-last-days-of-pompeii> a fabio:book ;
+    rdfs:label "The last days of Pompeii "^^xsd:string ;
+    fabio:hasCreator <http://www.w3id.org/book/edward-bulwer-lytton> ;
+    schema1:character <http://www.w3id.org/character/glaucus>,
+        <http://www.w3id.org/character/ione>,
+        <http://www.w3id.org/character/nydia> ;
+    schema1:contentLocation <http://www.w3id.org/place/temple-of-fortune>,
+        <http://www.w3id.org/place/vesuvius>,
+        " Italy"^^xsd:string,
+        "Pompeii"^^xsd:string ;
+    schema1:dateCreated "1834"^^xsd:gYear .
+
+<http://www.w3id.org/book/edward-bulwer-lytton> a schema1:Person ;
+    rdfs:label "Edward Bulwer Lytton"^^xsd:string ;
+    owl:sameAs <https://viaf.org/viaf/99871326> .
+
+<http://www.w3id.org/character/nydia> rdfs:label "Nydia"^^xsd:string ;
+    schema1:additionalName "the blind girl"^^xsd:string .
+
+<http://www.w3id.org/place/temple-of-fortune> rdfs:label "Temple of Fortune"^^xsd:string,
+        "Vesuvius"^^xsd:string ;
+    owl:sameAs <https://www.geonames.org/3164481>,
+        <https://www.wikidata.org/wiki/Q3983204> .
+
+<http://www.w3id.org/place/vesuvius> rdfs:label "Temple of Fortune"^^xsd:string,
+        "Vesuvius"^^xsd:string ;
+    owl:sameAs <https://www.geonames.org/3164481>,
+        <https://www.wikidata.org/wiki/Q3983204> .
+
+<http://www.w3id.org/character/ione> rdfs:label "Ione"^^xsd:string ;
+    arco:engagedTo <http://www.w3id.org/character/glaucus> ;
+    schema1:knows <http://www.w3id.org/character/glaucus> .
+
+<http://www.w3id.org/character/glaucus> rdfs:label "Glaucus"^^xsd:string ;
+    schema1:additionalName "the Athenian"^^xsd:string ;
+    schema1:knows <http://www.w3id.org/character/ione> .
+
