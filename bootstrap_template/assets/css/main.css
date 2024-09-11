@@ -433,6 +433,7 @@ h6 {
   margin-right: 15px;
   font-size: 24px;
   line-height: 0;
+  height:55px;
 }
 
 .footer h4 {
@@ -1035,6 +1036,7 @@ th, td {
   display: flex;
   align-items: center;
   justify-content: center;
+  height:55px;
 }
 
 .icon i {
