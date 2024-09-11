@@ -1,0 +1,328 @@
+@prefix arco: <https://w3id.org/arco/ontology/> .
+@prefix co: <https://w3id.org/arco/ontology/context-description/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix loc: <https://w3id.org/arco/ontology/location/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://w3id.org/the-eruption-in-lod/activity/excavation> a crm:E7 ;
+    rdfs:label "Excavation"^^xsd:string ;
+    schema1:startDate "1748"^^xsd:gYear ;
+    crm:P11_had_participant "Carlo III di Borbone"^^xsd:string ;
+    crm:P17_was_motivated_by <http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> ;
+    crm:P7_took_place_at <http://w3id.org/the-eruption-in-lod/archaeological-site/herculaneum-archaeological-site>,
+        <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site>,
+        <http://w3id.org/the-eruption-in-lod/archaeological-site/stabiae-archaeological-site> ;
+    owl:differentFrom <https://www.wikidata.org/wiki/Q839954> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q959782> ;
+    skos:broader <https://www.wikidata.org/wiki/Q23498> .
+
+<http://w3id.org/the-eruption-in-lod/item/excavation-map> a loc:map ;
+    rdfs:label "Excavation Map"^^xsd:string ;
+    dcterms:coverage <http://w3id.org/the-eruption-in-lod/institution/bibliothèque-nationale-de-france> ;
+    dcterms:created "1861"^^xsd:gYear ;
+    dcterms:creator "Forelli, G."^^xsd:string ;
+    dcterms:format "1 flle; 710 x 490"^^xsd:string ;
+    dcterms:language "latin"^^xsd:string ;
+    dcterms:title "Tabula Coloniae. Veneriae Corneliae Pompeis. Colonia a Triumvires deducta est, lege Sullana, postea Divus Augustus agrum ejus veteranis adsignavit, sed Imp. Vespasianus loca publica a privatis possessa Reip. Pomp. restituut. Tabulae modulus 1. IDCLXVI [1 : 1 666 ]. Acta est mensura an. IDCCCLXI. Curavit Ios. Forelli "^^xsd:string ;
+    loc:is_map_of <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site> .
+
+<http://w3id.org/the-eruption-in-lod/item/gli-ultimi-giorni-di-pompei-poster> a fabio:still_image ;
+    rdfs:label "Gli ultimi giorni di Pompei-Poster"^^xsd:string ;
+    lode:illustrate <http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> ;
+    dcterms:coverage <http://w3id.org/the-eruption-in-lod/institution/biblioteca-provinciale-“la-magna-capitana”-di-foggia> ;
+    dcterms:created "1959"^^xsd:gYear ;
+    dcterms:format "1 manifesto : litografia, color.; 48x68 cm"^^xsd:string ;
+    dcterms:language "Italian"^^xsd:string ;
+    dcterms:publisher "Romana Edistampa"^^xsd:string ;
+    dcterms:references <http://w3id.org/the-eruption-in-lod/item/gli-ultimi-giorni-di-pompei> ;
+    dcterms:subject "791.430945091 - CINEMA. Italia. 1900-1946"^^xsd:string ;
+    dcterms:title "SupertotalScope, Eastmancolor. Steve Reeves, Christine Kauffmann, Barbara Carroll ... [in] Gli ultimi giorni di Pompei. Mimmo Palamara ... Regia: Mario Bonnard. Filmar, prod.: Cineproduzioni associate Roma, Procusa Madrid, Transocean Monaco"^^xsd:string ;
+    dcterms:type "Graphical material"^^xsd:string ;
+    fabio:is_realization_of <http://w3id.org/the-eruption-in-lod/item/gli-ultimi-giorni-di-pompei> ;
+    schema1:contentLocation <http://w3id.org/the-eruption-in-lod/place/pompeii> ;
+    schema1:mentions <http://w3id.org/the-eruption-in-lod/person/steve-reeves> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1218993> .
+
+<http://w3id.org/the-eruption-in-lod/item/pompei-negli-scavi-vecchi-e-nuovi-documentary> a fabio:moving_image ;
+    rdfs:label "Pompei negli scavi vecchi e nuovi-Documentary"^^xsd:string ;
+    lode:illustrate <http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> ;
+    dcterms:coverage <http://w3id.org/the-eruption-in-lod/institution/istituto-nazionale-luce> ;
+    dcterms:created <http://w3id.org/the-eruption-in-lod/time-span/1924-31> ;
+    dcterms:creator <http://w3id.org/the-eruption-in-lod/institution/istituto-nazionale-luce> ;
+    dcterms:extent "00:36:55"^^xsd:string ;
+    dcterms:language "italiano"^^xsd:string ;
+    dcterms:title "Pompei negli scavi vecchi e nuovi"^^xsd:string ;
+    dcterms:type "silent documentary"^^xsd:string ;
+    schema1:color "b/w"^^xsd:string ;
+    schema1:locationCreated <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site>,
+        <http://w3id.org/the-eruption-in-lod/archaeological-site/stabiae-archaeological-site> ;
+    crm:P62_depicts <http://w3id.org/the-eruption-in-lod/archaeological-building/sanctuary-of-apollo>,
+        <http://w3id.org/the-eruption-in-lod/archaeological-building/temple-of-isis> .
+
+<http://w3id.org/the-eruption-in-lod/item/sanctuary-of-apollo-photo> a fabio:still_image ;
+    rdfs:label "Sanctuary of Apollo-Photo"^^xsd:string ;
+    dcterms:coverage <http://w3id.org/the-eruption-in-lod/institution/istituto-nazionale-luce> ;
+    dcterms:created "1929"^^xsd:gYear ;
+    dcterms:extent "13 x 18"^^xsd:string ;
+    dcterms:isPartOf "Serie L/ Pompei of the photographic archive of Istituto Nazionale Luce"^^xsd:string ;
+    dcterms:title "\"Tempio di Apollo\": l'area archeologica del tempio con il colonnato superstite del quadriportico, la statua di Apollo e i resti del podio - campo lungo "^^xsd:string ;
+    dcterms:type "negative"^^xsd:string ;
+    schema1:color "b/w"^^xsd:string ;
+    schema1:locationCreated <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site> ;
+    crm:P32_used_general_technique "gelatina bromuro d'argento/vetro (jelly silver bromide / glass)"^^xsd:string ;
+    crm:P62_depicts <http://w3id.org/the-eruption-in-lod/archaeological-building/sanctuary-of-apollo> .
+
+<http://w3id.org/the-eruption-in-lod/item/the-destruction-of-pompeii-and-herculaneum-painting> a crm:E22 ;
+    rdfs:label "The Destruction of Pompeii and Herculaneum-Painting"^^xsd:string ;
+    dcterms:coverage <http://w3id.org/the-eruption-in-lod/institution/tate-modern> ;
+    dcterms:created "1822"^^xsd:gYear ;
+    dcterms:creator <http://w3id.org/the-eruption-in-lod/person/john-martin> ;
+    dcterms:date "1869"^^xsd:gYear ;
+    dcterms:extent """support: 1616 x 530 mm,
+frame: 1968 x 2879 x 161 mm"""^^xsd:string ;
+    dcterms:modified "2011"^^xsd:gYear ;
+    dcterms:title "The Destruction of Pompeii and Herculaneum "^^xsd:string ;
+    schema1:contentLocation <http://w3id.org/the-eruption-in-lod/place/herculaneum>,
+        <http://w3id.org/the-eruption-in-lod/place/pompeii>,
+        <http://w3id.org/the-eruption-in-lod/place/stabiae> ;
+    crm:P32_used_general_technique "oil paint on canvas"^^xsd:string ;
+    crm:P62_depicts <http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q16934315> .
+
+<http://w3id.org/the-eruption-in-lod/item/the-last-days-of-pompeii-novel> a fabio:book ;
+    rdfs:label "The Last Days of Pompeii-Novel"^^xsd:string ;
+    lode:illustrate <http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> ;
+    dcterms:created "1834"^^xsd:gYear ;
+    dcterms:creator "Lytton, Edward Bulwer-Lytton"^^xsd:string ;
+    dcterms:extent "Text data (1 file : ca. 859 KB)"^^xsd:string ;
+    dcterms:language "english"^^xsd:string ;
+    dcterms:publisher "University of Oxford"^^xsd:string ;
+    dcterms:subject "Novels – Great Britain – 19th century"^^xsd:string ;
+    dcterms:title "The last days of Pompeii / by Edward George Bulwer-Lytton"^^xsd:string ;
+    dcterms:type "text"^^xsd:string ;
+    fabio:is_realization_of "The Last Days of Pompeii"^^xsd:string ;
+    schema1:contentLocation <http://w3id.org/the-eruption-in-lod/place/pompeii> ;
+    schema1:mentions <http://w3id.org/the-eruption-in-lod/archaeological-building/temple-of-isis> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1218985> .
+
+<http://w3id.org/the-eruption-in-lod/person/edward-bulwer-lytton> a schema1:Person ;
+    rdfs:label "Edward Bulwer-Lytton"^^xsd:string ;
+    schema1:birthDate "1803-05-25"^^xsd:date ;
+    schema1:deathDate "1873-01-18"^^xsd:date ;
+    schema1:familyName "Bulwer-Lytton"^^xsd:string ;
+    schema1:givenName "Edward"^^xsd:string ;
+    schema1:hasOccupation "politician"^^xsd:string,
+        "writer"^^xsd:string ;
+    owl:sameAs <https://viaf.org/viaf/99871326/#Lytton,_Edward_Bulwer_Lytton,_Baron,_1803-1873.> .
+
+<http://w3id.org/the-eruption-in-lod/person/pliny-the-younger> a schema1:Person ;
+    rdfs:label "Pliny the Younger"^^xsd:string ;
+    schema1:birthDate "0061"^^xsd:gYear ;
+    schema1:deathDate "0114"^^xsd:gYear ;
+    schema1:givenName "Gaius Plinius Caecilius Secundus"^^xsd:string ;
+    schema1:hasOccupation "politician"^^xsd:string,
+        "writer"^^xsd:string ;
+    schema1:knows <http://w3id.org/the-eruption-in-lod/person/pliny-the-elder> ;
+    owl:sameAs <https://viaf.org/viaf/10638270/#Pliny,_the_Younger> .
+
+<http://w3id.org/the-eruption-in-lod/date/79> a crm:E52 ;
+    rdfs:label "79"^^xsd:string ;
+    crm:P4_is_time_span_of <http://w3id.org/the-eruption-in-lod/event/death-of-pliny-the-elder> .
+
+<http://w3id.org/the-eruption-in-lod/event/death-of-pliny-the-elder> a crm:E5 ;
+    rdfs:label "Death of Pliny the Elder"^^xsd:string ;
+    crm:P11_had_participant <http://w3id.org/the-eruption-in-lod/person/pliny-the-elder> ;
+    crm:P129_is_subject_of "Epistulae VI 16, 4-20"^^xsd:string .
+
+<http://w3id.org/the-eruption-in-lod/institution/biblioteca-provinciale-“la-magna-capitana”-di-foggia> a crm:E74 ;
+    rdfs:label "Biblioteca Provinciale “La Magna Capitana” di Foggia"^^xsd:string .
+
+<http://w3id.org/the-eruption-in-lod/institution/bibliothèque-nationale-de-france> a crm:E74 ;
+    rdfs:label "Bibliothèque Nationale de France"^^xsd:string .
+
+<http://w3id.org/the-eruption-in-lod/institution/tate-modern> a crm:E74 ;
+    rdfs:label "Tate Modern"^^xsd:string .
+
+<http://w3id.org/the-eruption-in-lod/institution/the-british-museum> a crm:E74 ;
+    rdfs:label "The British Museum"^^xsd:string .
+
+<http://w3id.org/the-eruption-in-lod/item/demetra-statue> a crm:E22 ;
+    rdfs:label "Demetra Statue"^^xsd:string ;
+    dcterms:created <http://w3id.org/the-eruption-in-lod/time-span/25-bc-14-ad> ;
+    dcterms:extent "181 x 68 x 35 cm"^^xsd:string ;
+    dcterms:subject <http://w3id.org/the-eruption-in-lod/subject/demetra> ;
+    dcterms:title "female statue of Demetra"^^xsd:string ;
+    dcterms:type "statuary"^^xsd:string ;
+    crm:P32_used_general_technique "carving/sanding/ overpainting"^^xsd:string ;
+    crm:P45_consist_of "pentelic marble"^^xsd:string ;
+    co:has_finding_location <http://w3id.org/the-eruption-in-lod/archaeological-site/herculaneum-archaeological-site> .
+
+<http://w3id.org/the-eruption-in-lod/item/focaccia-bread> a crm:E22 ;
+    rdfs:label "Focaccia Bread"^^xsd:string ;
+    dcterms:created <http://w3id.org/the-eruption-in-lod/date/79> ;
+    dcterms:description "Focaccia "^^xsd:string ;
+    dcterms:extent """diameter: 14 cm,
+height: 6 cm"""^^xsd:string ;
+    dcterms:title "Focaccia pane a sei spicchi  "^^xsd:string ;
+    dcterms:type "organic finds"^^xsd:string ;
+    crm:P45_consists_of "food dough"^^xsd:string ;
+    co:has_finding_location <http://w3id.org/the-eruption-in-lod/archaeological-site/herculaneum-archaeological-site> .
+
+<http://w3id.org/the-eruption-in-lod/item/house-of-the-vettii> a arco:archaeological_property ;
+    rdfs:label "House of the Vettii"^^xsd:string ;
+    dcterms:created <http://w3id.org/the-eruption-in-lod/time-span/1st-century-bc> ;
+    dcterms:extent "area(mq): 1123.78, perimeter(m): 139.11,   number of  rooms: 32"^^xsd:string ;
+    dcterms:modified <http://w3id.org/the-eruption-in-lod/time-span/62-ad-79-ad> ;
+    dcterms:title "Casa dei Vettii"^^xsd:string ;
+    dcterms:type "domus"^^xsd:string ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1590855> ;
+    co:has_finding_location <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site> ;
+    co:use_function "living house"^^xsd:string .
+
+<http://w3id.org/the-eruption-in-lod/person/john-martin> a schema1:Person ;
+    rdfs:label "John Martin"^^xsd:string ;
+    schema1:birthDate "1759-07-19"^^xsd:date ;
+    schema1:deathDate "1854-02-17"^^xsd:date ;
+    schema1:familyName "Martin"^^xsd:string ;
+    schema1:givenName "John"^^xsd:string ;
+    schema1:hasOccupation "illustrator"^^xsd:string,
+        "painter"^^xsd:string ;
+    owl:sameAs <http://vocab.getty.edu/page/ulan/500023063> .
+
+<http://w3id.org/the-eruption-in-lod/person/steve-reeves> a schema1:Person ;
+    rdfs:label "Steve Reeves"^^xsd:string ;
+    schema1:birthDate "1926-01-01"^^xsd:date ;
+    schema1:deathDate "2000-05-01"^^xsd:date ;
+    schema1:familyName "Reeves"^^xsd:string ;
+    schema1:givenName "Steve"^^xsd:string ;
+    schema1:hasOccupation "actor"^^xsd:string,
+        "bodybuilder"^^xsd:string ;
+    owl:sameAs <https://viaf.org/viaf/8607800/#Reeves,_Steve> .
+
+<http://w3id.org/the-eruption-in-lod/subject/demetra> a crm:E55 ;
+    rdfs:label "Demetra"^^xsd:string ;
+    schema1:sameAs <http://www.wikidata.org/wiki/Q32102> ;
+    skos:broader <http://www.wikidata.org/wiki/Q22989102> .
+
+<http://w3id.org/the-eruption-in-lod/time-span/1924-31> a crm:E52 ;
+    rdfs:label "1924 - 31"^^xsd:string ;
+    time:hasBeginning "1924"^^xsd:gYear ;
+    time:hasEnd "1931"^^xsd:gYear .
+
+<http://w3id.org/the-eruption-in-lod/time-span/1st-century-bc> a crm:E52 ;
+    rdfs:label "1st century BC"^^xsd:string ;
+    time:hasBeginning "-0100"^^xsd:gYear ;
+    time:hasEnd "-0001"^^xsd:gYear .
+
+<http://w3id.org/the-eruption-in-lod/time-span/25-bc-14-ad> a crm:E52 ;
+    rdfs:label "25 BC - 14 AD"^^xsd:string ;
+    time:hasBeginning "-0025"^^xsd:gYear ;
+    time:hasEnd "0014"^^xsd:gYear .
+
+<http://w3id.org/the-eruption-in-lod/time-span/50-79-ad> a crm:E52 ;
+    rdfs:label "50-79 AD"^^xsd:string ;
+    time:hasBeginning "0050"^^xsd:gYear ;
+    time:hasEnd "0079"^^xsd:gYear .
+
+<http://w3id.org/the-eruption-in-lod/time-span/62-ad-79-ad> a crm:E52 ;
+    rdfs:label "62 AD - 79 AD"^^xsd:string ;
+    time:hasBeginning "0062"^^xsd:gYear ;
+    time:hasEnd "0079"^^xsd:gYear .
+
+<http://www.wikidata.org/wiki/Q22989102> skos:related <http://www.wikidata.org/wiki/Q34726> .
+
+<http://w3id.org/the-eruption-in-lod/archaeological-building/sanctuary-of-apollo> a arco:archaeological_property ;
+    rdfs:label "Sanctuary of Apollo"^^xsd:string ;
+    loc:at_site <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site> .
+
+<http://w3id.org/the-eruption-in-lod/archaeological-building/temple-of-isis> a arco:archaeological_property ;
+    rdfs:label "Temple of Isis"^^xsd:string ;
+    loc:at_site <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site> .
+
+<http://w3id.org/the-eruption-in-lod/archaeological-site/stabiae-archaeological-site> a arco:archaeological_property ;
+    rdfs:label "Stabiae Archaeological Site"^^xsd:string ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q547910> ;
+    loc:at_location <http://w3id.org/the-eruption-in-lod/place/stabiae> .
+
+<http://w3id.org/the-eruption-in-lod/item/gli-ultimi-giorni-di-pompei> rdfs:label "Gli ultimi giorni di Pompei"^^xsd:string ;
+    frbroo:R2_is_derivative_of "The Last Days of Pompeii"^^xsd:string ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1218993> .
+
+<http://w3id.org/the-eruption-in-lod/archaeological-site/herculaneum-archaeological-site> a arco:archaeological_property ;
+    rdfs:label "Herculaneum Archaeological Site"^^xsd:string ;
+    owl:sameAs <https://www.geonames.org/3177364> ;
+    loc:at_location <http://w3id.org/the-eruption-in-lod/place/herculaneum> .
+
+<http://w3id.org/the-eruption-in-lod/institution/istituto-nazionale-luce> a crm:E74 ;
+    rdfs:label "Istituto Nazionale Luce"^^xsd:string .
+
+<http://w3id.org/the-eruption-in-lod/item/lamp> a crm:E22 ;
+    rdfs:label "lamp"^^xsd:string ;
+    dcterms:coverage <http://w3id.org/the-eruption-in-lod/institution/the-british-museum> ;
+    dcterms:created <http://w3id.org/the-eruption-in-lod/time-span/50-79-ad> ;
+    dcterms:description "Pottery lamp with crude ovolos around discus, long, broad, plain nozzle with volutes. Dull dark brown slip almost all gone, but remaining on nozzle and in ovolos."^^xsd:string ;
+    dcterms:extent """ Height: 2.50 centimetres
+ Length: 10.50 centimetres
+Width: 6.70 centimetres"""^^xsd:string ;
+    dcterms:title <http://w3id.org/the-eruption-in-lod/item/lamp> ;
+    dcterms:type <http://w3id.org/the-eruption-in-lod/item/lamp> ;
+    crm:P32_used_general_technique "mould-made"^^xsd:date ;
+    crm:P45_consists_of "pottery"^^xsd:string ;
+    loc:has_finding_location <http://w3id.org/the-eruption-in-lod/place/naples> .
+
+<http://w3id.org/the-eruption-in-lod/person/pliny-the-elder> a crm:E22,
+        crm:E39 ;
+    rdfs:label "Pliny the Elder"^^xsd:string ;
+    schema1:birthDate "-0061"^^xsd:gYear ;
+    schema1:deathDate "0079"^^xsd:gYear ;
+    schema1:givenName "Gaius Plinius Secundus"^^xsd:string ;
+    schema1:hasOccupation "military commander"^^xsd:string,
+        "scientist"^^xsd:string,
+        "writer"^^xsd:string ;
+    owl:sameAs <https://viaf.org/viaf/100219162/#Pliny,_the_Elder> .
+
+<http://w3id.org/the-eruption-in-lod/place/herculaneum> a crm:E53 ;
+    rdfs:label "Herculaneum"^^xsd:string ;
+    crm:P89 <http://w3id.org/the-eruption-in-lod/place/naples> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q72111> .
+
+<http://w3id.org/the-eruption-in-lod/place/naples> a crm:E53 ;
+    rdfs:label "Naples"^^xsd:string ;
+    crm:P89 <http://www.geonames.org/3181042> .
+
+<http://w3id.org/the-eruption-in-lod/place/stabiae> a crm:E53 ;
+    rdfs:label "Stabiae"^^xsd:string ;
+    crm:P89 <http://w3id.org/the-eruption-in-lod/place/naples> ;
+    owl:sameAs <https://www.geonames.org/3179661> .
+
+<http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> a lode:event ;
+    lode:atPlace <http://w3id.org/the-eruption-in-lod/place/herculaneum>,
+        <http://w3id.org/the-eruption-in-lod/place/pompeii>,
+        <http://w3id.org/the-eruption-in-lod/place/stabiae> ;
+    lode:atTime "0079"^^xsd:gYear ;
+    lode:involved <http://w3id.org/the-eruption-in-lod/item/demetra-statue>,
+        <http://w3id.org/the-eruption-in-lod/item/focaccia-bread>,
+        <http://w3id.org/the-eruption-in-lod/item/house-of-the-vettii>,
+        <http://w3id.org/the-eruption-in-lod/item/lamp> ;
+    lode:involvedAgent <http://w3id.org/the-eruption-in-lod/person/pliny-the-elder> .
+
+<http://w3id.org/the-eruption-in-lod/place/pompeii> a crm:E53 ;
+    rdfs:label "Pompeii"^^xsd:string ;
+    crm:P122 <http://w3id.org/the-eruption-in-lod/place/stabiae> ;
+    crm:P89 <http://w3id.org/the-eruption-in-lod/place/naples> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q36471> .
+
+<http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site> a arco:archaeological_property ;
+    rdfs:label "Pompeii Archaeological Site"^^xsd:string ;
+    owl:sameAs <https://www.geonames.org/3170336> ;
+    loc:at_location <http://w3id.org/the-eruption-in-lod/place/pompeii> .
+

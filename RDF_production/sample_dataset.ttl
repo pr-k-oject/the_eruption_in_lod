@@ -1,0 +1,92 @@
+@prefix arco: <https://w3id.org/arco/ontology/> .
+@prefix co: <https://w3id.org/arco/ontology/context-description/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix loc: <https://w3id.org/arco/ontology/location/> .
+@prefix lode: <http://linkedevents.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://w3id.org/the-eruption-in-lod/activity/excavation> a crm:E7 ;
+    rdfs:label "Excavation"^^xsd:string ;
+    schema1:startDate "1748"^^xsd:gYear ;
+    crm:P11_had_participant "Carlo III di Borbone"^^xsd:string ;
+    crm:P17_was_motivated_by <http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> ;
+    crm:P7_took_place_at <http://w3id.org/the-eruption-in-lod/archaeological-site/herculaneum-archaeological-site>,
+        <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site>,
+        <http://w3id.org/the-eruption-in-lod/archaeological-site/stabiae-archaeological-site> ;
+    owl:differentFrom <https://www.wikidata.org/wiki/Q839954> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q959782> ;
+    skos:broader <https://www.wikidata.org/wiki/Q23498> .
+    
+    <http://w3id.org/the-eruption-in-lod/item/the-destruction-of-pompeii-and-herculaneum-painting> a crm:E22 ;
+    rdfs:label "The Destruction of Pompeii and Herculaneum-Painting"^^xsd:string ;
+    dcterms:coverage <http://w3id.org/the-eruption-in-lod/institution/tate-modern> ;
+    dcterms:created "1822"^^xsd:gYear ;
+    dcterms:creator <http://w3id.org/the-eruption-in-lod/person/john-martin> ;
+    dcterms:date "1869"^^xsd:gYear ;
+    dcterms:extent """support: 1616 x 530 mm,
+frame: 1968 x 2879 x 161 mm"""^^xsd:string ;
+    dcterms:modified "2011"^^xsd:gYear ;
+    dcterms:title "The Destruction of Pompeii and Herculaneum "^^xsd:string ;
+    schema1:contentLocation <http://w3id.org/the-eruption-in-lod/place/herculaneum>,
+        <http://w3id.org/the-eruption-in-lod/place/pompeii>,
+        <http://w3id.org/the-eruption-in-lod/place/stabiae> ;
+    crm:P32_used_general_technique "oil paint on canvas"^^xsd:string ;
+    crm:P62_depicts <http://w3id.org/the-eruption-in-lod/event/vesuvius-eruption> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q16934315> .
+
+   <http://w3id.org/the-eruption-in-lod/item/demetra-statue> a crm:E22 ;
+    rdfs:label "Demetra Statue"^^xsd:string ;
+    dcterms:created <http://w3id.org/the-eruption-in-lod/time-span/25-bc-14-ad> ;
+    dcterms:extent "181 x 68 x 35 cm"^^xsd:string ;
+    dcterms:subject <http://w3id.org/the-eruption-in-lod/subject/demetra> ;
+    dcterms:title "female statue of Demetra"^^xsd:string ;
+    dcterms:type "statuary"^^xsd:string ;
+    crm:P32_used_general_technique "carving/sanding/ overpainting"^^xsd:string ;
+    crm:P45_consist_of "pentelic marble"^^xsd:string ;
+    co:has_finding_location <http://w3id.org/the-eruption-in-lod/archaeological-site/herculaneum-archaeological-site> .
+
+    <http://w3id.org/the-eruption-in-lod/place/stabiae> a crm:E53 ;
+    rdfs:label "Stabiae"^^xsd:string ;
+    crm:P89 <http://w3id.org/the-eruption-in-lod/place/naples> ;
+    owl:sameAs <https://www.geonames.org/3179661> .
+
+   <http://w3id.org/the-eruption-in-lod/place/herculaneum> a crm:E53 ;
+    rdfs:label "Herculaneum"^^xsd:string ;
+    crm:P89 <http://w3id.org/the-eruption-in-lod/place/naples> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q72111> .
+
+    <http://w3id.org/the-eruption-in-lod/place/pompeii> a crm:E53 ;
+    rdfs:label "Pompeii"^^xsd:string ;
+    crm:P122 <http://w3id.org/the-eruption-in-lod/place/stabiae> ;
+    crm:P89 <http://w3id.org/the-eruption-in-lod/place/naples> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q36471> .
+
+    <http://w3id.org/the-eruption-in-lod/archaeological-site/pompeii-archaeological-site> a arco:archaeological_property ;
+    rdfs:label "Pompeii Archaeological Site"^^xsd:string ;
+    owl:sameAs <https://www.geonames.org/3170336> ;
+    loc:at_location <http://w3id.org/the-eruption-in-lod/place/pompeii> .
+
+   <http://w3id.org/the-eruption-in-lod/archaeological-site/stabiae-archaeological-site> a arco:archaeological_property ;
+    rdfs:label "Stabiae Archaeological Site"^^xsd:string ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q547910> ;
+    loc:at_location <http://w3id.org/the-eruption-in-lod/place/stabiae> .
+
+    <http://w3id.org/the-eruption-in-lod/archaeological-site/herculaneum-archaeological-site> a arco:archaeological_property ;
+    rdfs:label "Herculaneum Archaeological Site"^^xsd:string ;
+    owl:sameAs <https://www.geonames.org/3177364> ;
+    loc:at_location <http://w3id.org/the-eruption-in-lod/place/herculaneum> .
+
+    <http://www.wikidata.org/wiki/Q22989102> skos:related <http://www.wikidata.org/wiki/Q34726> .
+
+    <http://w3id.org/the-eruption-in-lod/subject/demetra> a crm:E55 ;
+    rdfs:label "Demetra"^^xsd:string ;
+    schema1:sameAs <http://www.wikidata.org/wiki/Q32102> ;
+    skos:broader <http://www.wikidata.org/wiki/Q22989102> .
