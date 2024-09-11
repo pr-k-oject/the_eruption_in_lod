@@ -769,14 +769,14 @@
                   <td>dcterms:title</td>
                   <td>SGL-Titolo SGLT-Titolo proprio</td>
                   <td>SGTT-Titolo</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;title&#62;</td>
                   <td>Title</td>
                   <td>E35_Title</td></tr>
                   <tr><td>Type</td>
                   <td>dcterms:type</td>
                   <td>FTAP-Tipo</td>
                   <td>OGTT-Tipologia</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;genreform&#62;</td>
                   <td>Work
                     Type
                     Description</td>
@@ -787,7 +787,9 @@
                   <td>dcterms:medium</td>
                   <td>MTC-Materia e tecnica</td>
                   <td>MTC-Materia e tecnica</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;physdesc&#62;
+                    &#60;physfacet&#62;
+                  </td>
                   <td>Materials and tecniques display
                     Materials
                     Material Type Technique
@@ -812,14 +814,14 @@
                   <td>/</td>
                   <td>/</td>
                   <td>RSER-Tipo relazione (in RSE-Relazioni dirette)</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;event&#62;</td>
                   <td>/</td>
                   <td>E5_Event</td></tr>
                   <tr><td>Function</td>
                   <td>dcterms:description</td>
                   <td>/</td>
                   <td>/</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;function&#62;</td>
                   <td>Work
                     Type
                   </td>
@@ -843,7 +845,10 @@
                     MISS-Spessore 
                     FTAF-Formato
                   </td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;physdesc&#62;
+                    &#60;dimensions&#62; <br>
+                    (in &#60;archdesc&#62;)
+                  </td>
                   <td>
                     Measurements 
                     Unit of Measurement
@@ -867,7 +872,9 @@
                   <td>FTAF-Formato 
                     VDCP-Tipo
                   </td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;physdesc&#62;
+                    &#60;physfacet&#62;
+                  </td>
                   <td>Format</td>
                   <td>/</td></tr>
                   <tr><td>File format</td>
@@ -879,28 +886,34 @@
                   <td>FTAF-Formato 
                     VDCP-Tipo
                   </td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;altformavail&#62;
+                    &#60;archdesc&#62;
+                  </td>
                   <td>Format</td>
                   <td>/</td></tr>
                   <tr><td>Language</td>
                   <td>dcterms:language</td>
                   <td>/</td>
                   <td>ISRL-Lingua</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;language&#62;
+                    &#60;languagedeclaration&#62;
+                  </td>
                   <td>Language</td>
                   <td>P72_has_language (is_language_of)</td></tr>
                   <tr><td>Description</td>
                   <td>dcterms:description</td>
                   <td>OGTD-Definizione dell'oggetto</td>
                   <td>OGTD-Definizione</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;abstract&#62;
+                    &#60;archdesc&#62;
+                  </td>
                   <td>Description</td>
                   <td>/</td></tr>
                   <tr><td>Subject</td>
                   <td>dcterms:subject</td>
                   <td>SGT-Soggetto</td>
                   <td>SGT-Soggetto</td>
-                  <td>&#60;&#62;</td>
+                  <td>&#60;subject&#62;</td>
                   <td>Subject</td>
                   <td>P129_is_about (is subject of)
                     P104_is_subject_to (applies to)
