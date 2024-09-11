@@ -753,10 +753,12 @@ section,
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
-table {
+.table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
 th, td {
