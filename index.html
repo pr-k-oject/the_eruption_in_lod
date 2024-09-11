@@ -475,7 +475,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" id="our-legend">
         <h3 style="background-color: #800000; color: white; padding: 10px; text-align: center; margin-top: 60px; margin-bottom: 20px;"><b>Conceptual map</b></h3>
-        <p style="text-align: justify;">The initial phase of knowledge organization corresponds to the production of the <b>Conceptual map</b>, in order to visualize all the items and the connection between them and the main event of the Vesuvius eruption. Moreover, to make our core idea clearer, we have chosen to insert additional elements to the conceptual model in order to increase the project’s specifications.
+        <p style="text-align: justify;">The initial phase of knowledge organization corresponds to the production of the <b>Conceptual map</b>, in order to visualize all the items and the connection between them and the main event of the Vesuvius eruption. Moreover, to make our core idea clearer, we have chosen to insert additional elements to the conceptual model.
           We then created the following legend to make our maps more readable.
           </p>
       </div><!-- End Section Title -->
@@ -1038,7 +1038,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" id="conceptual-model">
         <h3 style="background-color: #800000; color: white; padding: 10px; text-align: center; margin-top: 60px; margin-bottom: 20px;"><b>Conceptual model</b></h3>
-        <p style="text-align: justify;">The <b>conceptual model</b> represents the final stage of the formal representation of our main idea. In this model we reuse existing schemas, vocabularies and ontologies to rewrite the theoretical model in a more abstract way, following an ontological approach.</p>
+        <p style="text-align: justify;">The <b>conceptual model</b> represents the final stage of the formal representation of our main idea. In this model we reuse existing schemas, vocabularies and ontologies to rewrite the theoretical model in a more abstract way, following an ontological approach. <br/>In particular, <strong>LODE</strong> was chosen to represent the core of our idea, along with <strong>CIDOC-CRM</strong>, that was also our main choice for the description of artifacts.  <strong>Arco</strong> ontologies were used for the representation of archeological sites and buildings, while <strong>FRBRoo</strong> and <strong>Fabio</strong> were chosen for the conceptualization of textual and audiovisual material. Finally, <strong>Dublin Core</strong> and <strong>Schema</strong> provided general classes and properties to describe the entities we identified, while <strong>Time</strong> was used for the conceptualization of some of our dates, together with CIDOC.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -1120,6 +1120,7 @@
         <div class="container section-title" data-aos="fade-up" id="items-description">
           <h3 style="background-color: #800000; color: white; padding: 10px; text-align: center; margin-top: 60px; margin-bottom: 20px;">Items description</h3>
           <p style="text-align: justify;">In the <b>item description</b> part, we have described all the items according to their property, already analyzed in the conceptual model. For each of our ten objects we have created a table where <b>every row represents a statement about the item</b>, while <b>the columns represent in order the subject, the predicate and the object of each statement</b>. The subject and the object are written in natural language, while the predicates are expressed through the ontologies already found in the conceptual model.</p>
+          <p style="text-align: left;">The following tables can be downloaded as CSV files <a href="" target="_blank">here</a>.</p>
         </div><!-- End Section Title -->
   
          
@@ -1599,13 +1600,29 @@
      <!-- Section Title -->
      <div class="container section-title" data-aos="fade-up" id="rdf-production">
       <h3 style="background-color: #800000; color: white; padding: 10px; text-align: center; margin-top: 60px; margin-bottom: 20px;">RDF Production</h3>
-      <p style="text-align: justify;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <p style="text-align:justify;">Starting from the tables above, we moved on to the RDF production process. The first step was the association of URIs to the selected entities. We then defined the prefixes for the ontologies we decided to adopt and wrote a <strong>Python</strong> script to transform data into RDF and serialize it in <strong>turtle</strong>. The Python script can be found <a href="">here.</a><br/>
+        The section below shows a sample of the <a href="RDF_production/complete_dataset.ttl">complete dataset</a>, from which we selected two items - <em>The Destruction of Pompeii and Herculaneum</em> by John Martin and the statue of Demetra found in the Archaeological Site of Herculaneum - and the excavation activity from our conceptualization. Associations to the same <strong>authorities</strong> (e.g. from VIAF, GeoNames, Wikidata and ULAN), as well as <strong>relations to other resources</strong>, were included.</p><br/>
+        <script src="https://gist.github.com/matildepassafaro/712039ea421de51130c7d6c77c864d9d.js"></script>
     </div><!-- End Section Title -->
 
 
     <div class="container section-title" data-aos="fade-up" id="rdf-visualization">
       <h3 style="background-color: #800000; color: white; padding: 10px; text-align: center; margin-top: 60px; margin-bottom: 20px;">RDF Visualization</h3>
-      <p style="text-align: justify;">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <div class="isotope-layout" data-layout="masonry" data-sort="original-order">
+    
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item map-item isotope-item">
+            <img src="bootstrap_template/assets/img/rdf_visualizations/rdf-grapher_sample_dataset.png" class="img-fluid map-img" alt="RDF-novel-visualization">
+            <div class="portfolio-info">
+              
+              <a href="bootstrap_template/assets/img/rdf_visualizations/rdf-grapher_sample_dataset.png" title="RDF-novel-visualization" data-gallery="portfolio-gallery-app" class="glightbox preview-link map">
+                <i class="bi bi-zoom-in" style="text-align: center;">Zoom image</i></a>
+            </div>
+          </div><!-- End Portfolio Item -->
+        </div><!-- End Portfolio Container -->
+    </div><!-- End Section Title -->
+  </div>
     </div><!-- End Section Title -->
 
     <!-- Call To Action Section -->
@@ -1633,7 +1650,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up" id="text-conversions">
         <h2>TEXT CONVERSIONS</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Extracts from Edward Bulwer-Lytton's <em>The Last Days of Pompeii</em> were chosen as the basis for this part of the project. Starting from the plain text of the novel provided by Oxford Text Archive, we created an <strong>XML/TEI</strong> document, that was later transformed in <strong>HTML</strong> thourgh XSLT and in <strong>RDF</strong> through Python.</p>
       </div><!-- End Section Title -->
 
         <!-- Section Title -->
