@@ -628,8 +628,11 @@ section,
   text-align: center;
   padding-bottom: 60px;
   position: relative;
+  scroll-margin-top: 100px;
 }
-
+.ko-section-title, .kr-section-title, .about-section-title, .tc-section-title {
+  scroll-margin-top: 150px;
+}
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
