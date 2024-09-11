@@ -1010,6 +1010,36 @@ th, td {
   width: 100%;
 }
 
+/* Stile per i contenitori delle icone */
+.service-item {
+  display: flex;
+  align-items: center; /* Allinea verticalmente */
+  padding: 15px;
+  border-radius: 10px; /* Angoli arrotondati */
+  background-color: #f8f9fa; /* Colore di sfondo del contenitore */
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  background-color: #e9ecef; /* Colore di sfondo al passaggio del mouse */
+}
+
+.icon {
+  background-color: #ab1717; /* Colore di sfondo rosso per le icone */
+  color: #fff; /* Colore dell'icona bianco */
+  border-radius: 50%; /* Angoli arrotondati per lo sfondo dell'icona */
+  padding: 15px; /* Spazio attorno all'icona */
+  margin-right: 15px; /* Spazio tra l'icona e il testo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  font-size: 24px; /* Dimensione dell'icona */
+}
+
+
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
