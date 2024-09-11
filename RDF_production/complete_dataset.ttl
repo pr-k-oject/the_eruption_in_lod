@@ -275,14 +275,14 @@ height: 6 cm"""^^xsd:string ;
 Width: 6.70 centimetres"""^^xsd:string ;
     dcterms:title <http://w3id.org/the-eruption-in-lod/item/lamp> ;
     dcterms:type <http://w3id.org/the-eruption-in-lod/item/lamp> ;
-    crm:P32_used_general_technique "mould-made"^^xsd:date ;
+    crm:P32_used_general_technique "mould-made" ;
     crm:P45_consists_of "pottery"^^xsd:string ;
     loc:has_finding_location <http://w3id.org/the-eruption-in-lod/place/naples> .
 
 <http://w3id.org/the-eruption-in-lod/person/pliny-the-elder> a crm:E22,
         crm:E39 ;
     rdfs:label "Pliny the Elder"^^xsd:string ;
-    schema1:birthDate "-0061"^^xsd:gYear ;
+    schema1:birthDate "0023"^^xsd:gYear ;
     schema1:deathDate "0079"^^xsd:gYear ;
     schema1:givenName "Gaius Plinius Secundus"^^xsd:string ;
     schema1:hasOccupation "military commander"^^xsd:string,

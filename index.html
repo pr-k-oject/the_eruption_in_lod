@@ -58,7 +58,7 @@
           </li>
           <li class="dropdown"><a href="#knowledge-organization"><span>Knowledge Organization</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#conceptual-map">Conceptual map</a></li>
+              <li><a href="#our-legend">Conceptual map</a></li>
               <li><a href="#er-model">ER model</a></li>
               <li><a href="#metadata-analysis">Metadata analysis</a></li>
               <li><a href="#metadata-alignment">Metadata alignment</a></li>
@@ -417,7 +417,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
             <div>
-              <h4 class="title"><a href="#conceptual-map" class="stretched-link" style="color:black;">Conceptual map</a></h4>
+              <h4 class="title"><a href="#our-legend" class="stretched-link" style="color:black;">Conceptual map</a></h4>
             </div>
           </div>
           <!-- End Service Item -->
@@ -1105,7 +1105,7 @@
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="bi bi-lightbulb"></i></div>
             <div>
-              <h4 class="title"><a href="#conceptual-map" class="stretched-link" style="color:black;">Conceptual map</a></h4>
+              <h4 class="title"><a href="#our-legend" class="stretched-link" style="color:black;">Conceptual map</a></h4>
             </div>
           </div>
           <!-- End Service Item -->
@@ -1133,7 +1133,7 @@
         <div class="container section-title" data-aos="fade-up" id="items-description">
           <h3 style="background-color: #800000; color: white; padding: 10px; text-align: center; margin-top: 60px; margin-bottom: 20px;">Items description</h3>
           <p style="text-align: justify;">In the <b>item description</b> part, we have described all the items according to their property, already analyzed in the conceptual model. For each of our ten objects we have created a table where <b>every row represents a statement about the item</b>, while <b>the columns represent in order the subject, the predicate and the object of each statement</b>. The subject and the object are written in natural language, while the predicates are expressed through the ontologies already found in the conceptual model.</p>
-          <p style="text-align: left;">The following tables can be downloaded as CSV files <a href="" target="_blank">here</a>.</p>
+          <p style="text-align: left;">The following tables can be downloaded as CSV files <a href="csv_tables.zip" target="_blank">here</a>.</p>
         </div><!-- End Section Title -->
   
          
@@ -1172,7 +1172,7 @@
                   <td>Pottery lamp with crude ovolos around discus, long, broad, plain nozzle with volutes. Dull dark brown slip almost all gone, but remaining on nozzle and in ovolos.</td></tr>
                   <tr><td>Lamp</td>
                   <td>dcterms:created</td>
-                  <td>AD50-79</td></tr>
+                  <td>50-79 AD</td></tr>
                   <tr><td>Lamp</td>
                   <td>dcterms:type</td>
                   <td>Lamp</td></tr>
@@ -1322,7 +1322,7 @@
                             <td>13 x 18</td></tr>
                             <tr><td>Focaccia Bread</td>
                             <td>dcterms:created</td>
-                            <td>79 A.D.</td></tr>
+                            <td>79 AD</td></tr>
                             <tr><td>Focaccia Bread</td>
                             <td>crm:P45_consists_of</td>
                             <td>food dough</td></tr>
@@ -1354,7 +1354,7 @@
                             <td>carving/sanding/ overpainting </td></tr>
                             <tr><td>Demetra Statue</td>
                             <td>dcterms:created</td>
-                            <td>ca 25 B.C. - ca 14 A.D.</td></tr>
+                            <td>ca 25 BC - ca 14 AD</td></tr>
                             <tr><td>Demetra Statue</td>
                             <td>dcterms:extent</td>
                             <td>181 x 68 x 35 cm</td></tr>
@@ -1435,7 +1435,7 @@
                             <th>Predicate</th>
                             <th>Object</th></tr>
                             <tr><td>Gli ultimi giorni di Pompei-Poster</td>
-                            <td>lode:illusrate</td>
+                            <td>lode:illustrate</td>
                             <td>Vesuvius Eruption</td></tr>
                             <tr><td>Gli ultimi giorni di Pompei-Poster</td>
                             <td>dcterms:title</td>
@@ -1470,7 +1470,7 @@
                             <tr><td>Gli ultimi giorni di Pompei-Poster</td>
                             <td>dcterms:references</td>
                             <td>Gli ultimi giorni di Pompei</td></tr>
-                            <tr><td>Gli ultimi giorni di Pompei-Poster</td>
+                            <tr><td>Gli ultimi giorni di Pompei</td>
                             <td>fabio:is_realization_of</td>
                             <td>Work</td></tr>
                             <tr><td>Gli ultimi giorni di Pompei</td>
@@ -1499,7 +1499,7 @@
                             <th>Predicate</th>
                             <th>Object</th></tr>
                             <tr><td> Pompei negli scavi vecchi e nuovi-Documentary</td>
-                            <td>lode:illusrate</td>
+                            <td>lode:illustrate</td>
                             <td>Vesuvius Eruption</td></tr>
                             <tr><td> Pompei negli scavi vecchi e nuovi-Documentary</td>
                             <td>dcterms:title</td>
@@ -1613,8 +1613,8 @@
      <!-- Section Title -->
      <div class="container section-title" data-aos="fade-up" id="rdf-production">
       <h3 style="background-color: #800000; color: white; padding: 10px; text-align: center; margin-top: 60px; margin-bottom: 20px;">RDF Production</h3>
-      <p style="text-align:justify;">Starting from the tables above, we moved on to the RDF production process. The first step was the association of URIs to the selected entities. We then defined the prefixes for the ontologies we decided to adopt and wrote a <strong>Python</strong> script to transform data into RDF and serialize it in <strong>turtle</strong>. The Python script can be found <a href="">here.</a><br/>
-        The section below shows a sample of the <a href="RDF_production/complete_dataset.ttl">complete dataset</a>, from which we selected two items - <em>The Destruction of Pompeii and Herculaneum</em> by John Martin and the statue of Demetra found in the Archaeological Site of Herculaneum - and the excavation activity from our conceptualization. Associations to the same <strong>authorities</strong> (e.g. from VIAF, GeoNames, Wikidata and ULAN), as well as <strong>relations to other resources</strong>, were included.</p><br/>
+      <p style="text-align:justify;">Starting from the tables above, we moved on to the RDF production process. The first step was the association of URIs to the selected entities. We then defined the prefixes for the ontologies we decided to adopt and wrote a <strong>Python</strong> script to transform data into RDF and serialize it in <strong>turtle</strong>. The Python script can be found <a href="RDF_production/csv_to_rdf_dataset.py">here.</a><br/>
+        The section below shows a sample of the <a href="RDF_production\complete_dataset.ttl">complete dataset</a>, from which we selected two items - <em>The Destruction of Pompeii and Herculaneum</em> by John Martin and the statue of Demetra found in the Archaeological Site of Herculaneum - and the excavation activity from our conceptualization. Associations to the same <strong>authorities</strong> (e.g. from VIAF, GeoNames, Wikidata and ULAN), as well as <strong>relations to other resources</strong>, were included.</p><br/>
         <script src="https://gist.github.com/matildepassafaro/712039ea421de51130c7d6c77c864d9d.js"></script>
     </div><!-- End Section Title -->
 
@@ -1726,7 +1726,7 @@
                 <h4>Francesca Gaeta</h4>
                 <span>Humanistic background, graduated in Cultural Heritage at the University of Naples.
                    </span>
-                <span style="margin-top: 20px; display: block;">Dhdk student </span>
+                <span style="margin-top: 20px; display: block;">DHDK student </span>
                 <span> University of Bologna</span>
               </div>
             </div>
@@ -1745,7 +1745,7 @@
                 <h4>Matilde Passafaro</h4>
                 <span>Humanistic background, graduated in Italian studied at the University of Bologna.
                 </span>
-                <span style="margin-top: 20px; display: block;">Dhdk student </span>
+                <span style="margin-top: 20px; display: block;">DHDK student </span>
                 <span>University of Bologna</span>
               </div>
             </div>
@@ -1764,7 +1764,7 @@
                 <h4>Alice Piazzi</h4>
                 <span>Humanistic background, graduated in Communication sciences at the University of Bologna.
                 </span>
-                <span style="margin-top: 20px; display: block;">Dhdk student</span>
+                <span style="margin-top: 20px; display: block;">DHDK student</span>
                 <span>University of Bologna</span>
               </div>
             </div>
@@ -1788,7 +1788,7 @@
             <h4>Address</h4>
             <p>Aula Affreschi</p>
             <p>Via Zamboni, 34 (Bo)</p>
-            <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank"><strong>Dhdk Course</strong></a></span><br>
+            <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank"><strong>DHDK Course</strong></a></span><br>
             <p></p>
           </div>
 
