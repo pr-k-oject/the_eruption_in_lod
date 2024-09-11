@@ -23,7 +23,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #666666; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #333333; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: rgb(160, 14, 14); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: rgb(176, 51, 39); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -35,7 +35,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #666666; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #03c4eb; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #eb3503; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -267,7 +267,7 @@ h6 {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: red;
+    color: rgba(123, 28, 28, 0.942);
   }
 
   .navmenu .dropdown:hover>ul {
@@ -359,7 +359,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: red;
+    color: rgb(255, 0, 0);
   }
 
   .navmenu .active i,
@@ -847,9 +847,11 @@ th, td {
 }
 
 .filter-active {
-  color: #fff;
-  background-color: #7d7979;
+  color: #fff; /* Imposta il testo bianco */
+  background-color: #781908; /* Imposta lo sfondo bordeaux */
 }
+
+
 
 .portfolio-filters li {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -1025,11 +1027,11 @@ th, td {
 }
 
 .icon {
-  background-color: #850808; /* Colore di sfondo rosso per le icone */
+  background-color: #970808; /* Colore di sfondo rosso per le icone */
   color: #fff; /* Colore dell'icona bianco */
   border-radius: 50%; /* Angoli arrotondati per lo sfondo dell'icona */
   padding: 15px; /* Spazio attorno all'icona */
-  margin-right: 15px; /* Spazio tra l'icona e il testo */
+  margin-right: 10px; /* Spazio tra l'icona e il testo */
   display: flex;
   align-items: center;
   justify-content: center;
