@@ -831,27 +831,37 @@ th, td {
 # Dettagli tables
 --------------------------------------------------------------*/
 .portfolio-filters li {
+  margin-right: 12px; /* Aumenta lo spazio tra l'icona e il testo */
   font-family: 'Poppins', sans-serif; /* Scegli un font accattivante */
   font-size: 18px;
   font-weight: bold;
-  color: #fff;
-  padding: 10px 15px;
+  color: #fff !important;
+  padding: 15px 25px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #2eb0a7;
+  background-color: #941212;
 }
 
 .portfolio-filters li:hover {
-  color: #fff;
-  background-color: #a93226; /* Colore che appare al passaggio del mouse */
+  color: #fff !important;
+  background-color: #9d9b9b; /* Colore che appare al passaggio del mouse */
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #6e6e6b;
+  transform: translateY(-5px);
 }
 
 .filter-active {
-  color: #fff; /* Imposta il testo bianco */
+  color: #b1aeae !important; /* Imposta il testo bianco */
   background-color: #781908; /* Imposta lo sfondo bordeaux */
+  border: 2px solid #f39c12;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
 }
 
+.filter-active:hover {
+  color: #a39f9f !important /* Mantieni il colore del testo bianco anche quando l'elemento attivo è hoverato */
+}
 
 
 .portfolio-filters li {
