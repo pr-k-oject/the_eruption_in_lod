@@ -720,7 +720,16 @@
                 <td>dcterms:creator</td>
                 <td>AUT, AUTN</td>
                 <td>AUTS, AUTN</td>
-                <td>&#60;&#62;</td>
+                <td>&#60;author&#62; <br>
+                  (in &#60;eadheader&#62;) 
+                  &#60;name&#62;
+                  &#60;origination&#62;
+                  &#60;persname&#62;
+                  &#60;origination&#62;
+                  &#60;corpname&#62;
+                  &#60;famname&#62;
+                  (in &#60;archdesc&#62;)
+                </td>
                 <td>Creator Display</td>
                 <td>E12 Production
                   E7 Activity
@@ -735,7 +744,19 @@
                 <td>dcterms:contributor</td>
                 <td>/</td>
                 <td>/</td>
-                <td>&#60;&#62;</td>
+                <td>&#60;author&#62; <br>
+                  (in &#60;eadheader&#62;)
+                  &#60;sponsor&#62; <br>
+                  (in &#60;eadheader&#62; and<br>
+                  &#60;frontmatter&#62;)
+                  &#60;origination&#62;
+                  &#60;persname&#62;
+                  &#60;origination&#62;
+                  &#60;corpname&#62;
+                  &#60;origination&#62;
+                  &#60;famname&#62; <br>
+                  (in &#60;archdesc&#62;)
+                </td>
                 <td>Person_Corp_Rels_Subject.
                   person.corp.number
                 </td>
@@ -755,7 +776,7 @@
                 <td>dcterms:publisher</td>
                 <td>/</td>
                 <td>/</td>
-                <td>&#60;&#62;</td>
+                <td>&#60;publisher&#62;</td>
                 <td>/</td>
                 <td>/</td></tr>
               </table>
@@ -941,7 +962,11 @@
                     <td>GPL - Tipo di localizzazione (in GPL-Georeferenziazione tramite punto)
                       CTL-Tipo di localizzazione (in CS-Localizzazione catastale)
                       </td>
-                    <td>&#60;&#62;</td>
+                    <td>&#60;geogname&#62;<br>
+                      (in &#60;controlaccess&#62;)
+                      &#60;maintenancehistory&#62; <br>
+                      (in &#60;control&#62;)
+                    </td>
                     <td>Creation Location</td>
                     <td>/</td></tr>
                     <tr><td>Current geographic location of the resource</td>
@@ -958,7 +983,7 @@
                     <td>dcterms:coverage</td>
                     <td>LDC-Collocazione specifica (in LC-Localizzazione geografico-amministrativa)</td>
                     <td>LDC-Collocazione specifica (in LC-Localizzazione geografico-amministrativa)</td>
-                    <td>&#60;&#62;</td>
+                    <td>&#60;physloc&#62;</td>
                     <td>Current Location</td>
                     <td>P53_Has former or current location (is former or current location of)
                       P54_Has current permanent location (is current permanent location of)
@@ -967,7 +992,7 @@
                     <td>dcterms:isPartOf</td>
                     <td>UBF-Ubicazione bene (in UB-Dati patrimoniali/inventari/stime/collezioni)</td>
                     <td>/</td>
-                    <td>&#60;&#62;</td>
+                    <td>&#60;container&#62;</td>
                     <td>/</td>
                     <td>E78_Curated_Holding</td></tr>
                     <tr><td>Place of finding</td>
@@ -997,7 +1022,7 @@
                       <td>DTZ-Cronologia generica; DTS-Cronologia specifica (in DT-Cronologia); LRD-Data della ripresa (in LR-Data e luogo della ripresa)
                       </td>
                       <td>DTZ-Cronologia generica; DTS-Cronologia specifica </td>
-                      <td>&#60;&#62;</td>
+                      <td>&#60;unitdate&#62;</td>
                       <td>Display Date</td>
                       <td>E52_Time-Span
                         E61_Time Primitive</td></tr>
