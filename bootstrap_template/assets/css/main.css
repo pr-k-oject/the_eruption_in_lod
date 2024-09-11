@@ -824,6 +824,63 @@ th, td {
   }
 }
 /*--------------------------------------------------------------
+# Dettagli tables
+--------------------------------------------------------------*/
+.portfolio-filters li {
+  font-family: 'Poppins', sans-serif; /* Scegli un font accattivante */
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #b03a2e;
+}
+
+.portfolio-filters li:hover {
+  color: #fff;
+  background-color: #a93226; /* Colore che appare al passaggio del mouse */
+}
+
+.filter-active {
+  color: #fff;
+  background-color: #a93226;
+}
+
+.portfolio-filters li {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-filters li:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+.portfolio-filters li {
+  transform: translateY(0);
+  transition: transform 0.2s ease;
+}
+
+.portfolio-filters li:hover {
+  transform: translateY(-5px); /* Solleva leggermente l'elemento */
+}
+.portfolio-filters li {
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.portfolio-filters li:hover {
+  border: 2px solid #a93226; /* Aggiungi un bordo colorato al passaggio del mouse */
+}
+.portfolio-filters li {
+  background: #b03a2e; /* Colore di sfondo bordeaux */
+  color: #fff; /* Colore del testo bianco */
+}
+
+.portfolio-filters li:hover {
+  background: #a93226;
+}
+
+/*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about .content h3 {
