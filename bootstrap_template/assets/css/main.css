@@ -1042,7 +1042,7 @@ th, td {
   color: #fff; /* Colore dell'icona bianco */
   border-radius: 50%; /* Angoli arrotondati per lo sfondo dell'icona */
   padding: 15px; /* Spazio attorno all'icona */
-  margin-right: 10px; /* Spazio tra l'icona e il testo */
+  margin-right: 15px; /* Spazio tra l'icona e il testo */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1050,7 +1050,7 @@ th, td {
 }
 
 .icon i {
-  font-size: 24px; /* Dimensione dell'icona */
+  font-size: 50px; /* Dimensione dell'icona */
 }
 
 
