@@ -267,7 +267,7 @@ h6 {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: red;
+    color: rgb(0, 38, 255);
   }
 
   .navmenu .dropdown:hover>ul {
@@ -847,9 +847,11 @@ th, td {
 }
 
 .filter-active {
-  color: #fff;
-  background-color: #7d7979;
+  color: #fff; /* Imposta il testo bianco */
+  background-color: #781908; /* Imposta lo sfondo bordeaux */
 }
+
+
 
 .portfolio-filters li {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
