@@ -838,7 +838,7 @@ th, td {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #b03a2e;
+  background-color: #2eb0a7;
 }
 
 .portfolio-filters li:hover {
@@ -848,7 +848,7 @@ th, td {
 
 .filter-active {
   color: #fff;
-  background-color: #a93226;
+  background-color: #7d7979;
 }
 
 .portfolio-filters li {
@@ -872,15 +872,15 @@ th, td {
 }
 
 .portfolio-filters li:hover {
-  border: 2px solid #a93226; /* Aggiungi un bordo colorato al passaggio del mouse */
+  border: 2px solid #6e6e6b; /* Aggiungi un bordo colorato al passaggio del mouse */
 }
 .portfolio-filters li {
-  background: #b03a2e; /* Colore di sfondo bordeaux */
+  background: #781908; /* Colore di sfondo bordeaux */
   color: #fff; /* Colore del testo bianco */
 }
 
 .portfolio-filters li:hover {
-  background: #a93226;
+  background: #b7b6b6;
 }
 
 /*--------------------------------------------------------------
