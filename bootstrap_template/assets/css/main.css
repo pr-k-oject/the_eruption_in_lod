@@ -856,7 +856,7 @@ th, td {
   background-color: #781908; /* Imposta lo sfondo bordeaux */
   border: 2px solid #f39c12;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
+   transform: scale(1.05);
 }
 
 .filter-active:hover {
